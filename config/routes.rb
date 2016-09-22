@@ -8,6 +8,5 @@ Rails.application.routes.draw do
 
   resources :login do
   end
-  
 
 end

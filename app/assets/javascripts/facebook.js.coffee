@@ -13,7 +13,7 @@ window.fbAsyncInit = ->
     e.preventDefault()
     FB.login (response) ->
       if response.authResponse
-        return window.location = '/auth/facebook/callback?' + $.param(signed_request: response.authResponse.signedRequest)
+        return window.location = '/auth/facebook/callback' 
       return
   $('#sign_out').click (e) ->
     FB.getLoginStatus (response) ->
